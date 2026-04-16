@@ -1,5 +1,3 @@
-# Projeto-Power-Apps
-
 # App Power Apps – Envio de Atividades do Internato
 
 Este projeto consiste em um aplicativo desenvolvido em **Microsoft Power Apps**
