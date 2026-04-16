@@ -1,31 +1,61 @@
-# App Power Apps – Envio de Atividades do Internato
+# 📱 App Power Apps – Taxímetros do Internato
 
-Este projeto consiste em um aplicativo desenvolvido em **Microsoft Power Apps**
-para auxiliar no **envio e controle de atividades dos alunos do internato**
-de uma Instituição de Ensino Superior (IES).
+Aplicativo desenvolvido em **Microsoft Power Apps** para apoiar o **envio, registro e consulta de taxímetros/atividades dos alunos do internato** em uma Instituição de Ensino Superior (IES).
 
-## 🎯 Objetivo
-Facilitar o registro, envio e acompanhamento das atividades realizadas
-pelos alunos do internato de forma digital, centralizada e organizada.
+Este projeto foi criado como uma **solução prática para um problema real**, utilizando conceitos de **Power Platform** e **Power Fx**.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio dos taxímetros do internato, facilitando:
+
+- O registro das atividades pelos alunos  
+- A organização das informações por período e módulo  
+- A visualização e acompanhamento dos registros  
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
-- Microsoft Power Apps
-- Power Fx
-- SharePoint / Dataverse 
-- Power Platform
 
-## 📋 Funcionalidades
-- Envio de registros pelos alunos
-- Armazenamento dos dados
-- Visualização das atividades enviadas
-- Interface simples e intuitiva
+- **Microsoft Power Apps (Canvas App)**
+- **Power Fx**
+- **Power Platform**
+- Fonte de dados: SharePoint / Lista interna *(estrutura adaptável)*
 
-## 💡 Aprendizados
-- Criação de apps low-code
-- Uso de fórmulas Power Fx
-- Modelagem básica de dados
-- Soluções digitais para processos educacionais
+---
 
-## 👤 Autor
-Filipe Oliveira Cardoso  
-Perfil em início de carreira em tecnologia, com foco em Power Platform e dados.
+## 📋 Principais Funcionalidades
+
+- ✅ Listagem dos registros enviados
+- ✅ Busca dinâmica por título
+- ✅ Ordenação alfabética (crescente/decrescente)
+- ✅ Navegação entre telas (lista, detalhes e criação)
+- ✅ Atualização manual dos dados
+- ✅ Interface simples e intuitiva
+
+---
+
+## 🧠 Lógica do Aplicativo (Power Fx)
+
+O aplicativo utiliza fórmulas **Power Fx** para controlar a lógica e o comportamento das telas, incluindo:
+
+- `Filter()` → Filtrar registros conforme texto digitado  
+- `SortByColumns()` → Ordenar registros dinamicamente  
+- `StartsWith()` → Implementar busca por título  
+- `UpdateContext()` → Controle de estado da ordenação  
+- `Refresh()` → Atualização dos dados  
+- `Navigate()` → Navegação entre telas  
+
+### Exemplo de lógica utilizada:
+
+```powerfx
+SortByColumns(
+    Filter(
+        [@'Taxímetros - Internato'],
+        StartsWith(Título, TextSearchBox1.Text)
+    ),
+    "Título",
+    If(SortDescending1, SortOrder.Descending, SortOrder.Ascending)
+)
+``
