@@ -6,7 +6,7 @@ Este projeto foi criado como uma **solução prática para um problema real**, u
 
 ---
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
 O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio dos taxímetros do internato, facilitando:
 
@@ -25,7 +25,7 @@ O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio do
 
 ---
 
-## 📋 Principais Funcionalidades
+## Principais Funcionalidades
 
 - ✅ Listagem dos registros enviados
 - ✅ Busca dinâmica por título
@@ -36,7 +36,7 @@ O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio do
 
 ---
 
-## 🧠 Lógica do Aplicativo (Power Fx)
+## Lógica do Aplicativo (Power Fx)
 
 O aplicativo utiliza fórmulas **Power Fx** para controlar a lógica e o comportamento das telas, incluindo:
 
