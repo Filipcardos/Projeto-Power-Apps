@@ -1,4 +1,4 @@
-# 📱 App Power Apps – Taxímetros do Internato
+#  App Power Apps – Taxímetros do Internato
 
 Aplicativo desenvolvido em **Microsoft Power Apps** para apoiar o **envio, registro e consulta de taxímetros/atividades dos alunos do internato** em uma Instituição de Ensino Superior (IES).
 
@@ -16,7 +16,7 @@ O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio do
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Microsoft Power Apps (Canvas App)**
 - **Power Fx**
@@ -27,12 +27,12 @@ O objetivo do aplicativo é **digitalizar e centralizar** o processo de envio do
 
 ## Principais Funcionalidades
 
-- ✅ Listagem dos registros enviados
-- ✅ Busca dinâmica por título
-- ✅ Ordenação alfabética (crescente/decrescente)
-- ✅ Navegação entre telas (lista, detalhes e criação)
-- ✅ Atualização manual dos dados
-- ✅ Interface simples e intuitiva
+-  Listagem dos registros enviados
+-  Busca dinâmica por título
+-  Ordenação alfabética (crescente/decrescente)
+-  Navegação entre telas (lista, detalhes e criação)
+-  Atualização manual dos dados
+-  Interface simples e intuitiva
 
 ---
 
